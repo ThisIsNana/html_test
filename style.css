@@ -192,24 +192,65 @@ body ol {
 .container .container-portfolio .cards-area .card .img1 {
   background-image: url(./img/result-page/20230517-dessert-shop-v1.png);
 }
-.container .container-portfolio .cards-area .card button {
+.container .container-portfolio .cards-area .card .detail-btn {
   position: absolute;
-  left: 20px;
   bottom: 20px;
-  width: 200px;
+  left: 20px;
+  width: 220px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   font-size: 20px;
+  color: #FEDB5C;
+  background-color: #ffffff;
+  border: 2px solid #907100;
+  line-height: 40px;
+  transition: all 0.3s linear;
 }
+.container .container-portfolio .cards-area .card .detail-btn p {
+  position: relative;
+  z-index: 1;
+}
+.container .container-portfolio .cards-area .card .detail-btn::before {
+  content: "";
+  width: 100%;
+  height: 0%;
+  display: block;
+  background-color: #544200;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.container .container-portfolio .cards-area .card .detail-btn:hover {
+  color: #544200;
+}
+.container .container-portfolio .cards-area .card .detail-btn:hover::before {
+  height: 20%;
+}
+
 footer {
   margin-top: 100px;
   width: 100%;
-  height: 200px;
+  height: 600px;
   background-color: #FEDB5C;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer div {
+footer .connect-area {
+  display: flex;
+}
+footer .connect-area .connect-box {
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+  line-height: 10px;
+  margin: 10px;
+}
+footer .footer-text {
   text-align: center;
 }
 footer p {
