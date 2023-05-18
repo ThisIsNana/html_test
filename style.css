@@ -1,11 +1,223 @@
 body {
-  background-color: #FF9999;
+  margin: 0;
+  background-image: url(./img/Me-bg.png);
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+body hr {
+  border: 2px solid #ffc800;
+}
+body h2,
+body li,
+body p {
+  color: #544200;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+body h3 {
+  color: #907100;
+  font-family: "Papyrus";
+  font-weight: bold;
+}
+body ul {
+  padding: 0;
+}
+body ol {
+  padding: 20px;
 }
 
-div {
-  width: 100px;
-  height: 500px;
-  background-color: #ffff99;
+.container {
+  border-radius: 50px;
+  width: 900px;
+  background-color: #ffffff;
+  margin: auto;
 }
-
-/*# sourceMappingURL=style.css.map */
+.container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FEDB5C;
+  padding: 40px 0;
+}
+.container header .head {
+  width: 200px;
+  -webkit-clip-path: circle(45.8% at 50% 50%);
+          clip-path: circle(45.8% at 50% 50%);
+}
+.container header .head-name {
+  font-size: 32px;
+  margin: 5px 0;
+  color: #544200;
+}
+.container header .head-intro {
+  font-size: 16px;
+  margin: 0 0;
+  color: #544200;
+}
+.container .container-detail,
+.container .container-workexp {
+  width: 750px;
+  margin: auto;
+}
+.container .container-detail {
+  width: 750px;
+  margin: auto;
+}
+.container .container-detail .profile-area .profile-banner {
+  margin-top: 50px;
+  display: flex;
+  align-items: end;
+}
+.container .container-detail .profile-area .profile-banner h2,
+.container .container-detail .profile-area .profile-banner h3 {
+  margin: 0 10px 0 0;
+}
+.container .container-detail .profile-area li {
+  list-style-type: none;
+  line-height: 32px;
+}
+.container .container-detail .education-area .edu-banner {
+  margin-top: 50px;
+  display: flex;
+  align-items: end;
+  display: flex;
+  align-items: end;
+}
+.container .container-detail .education-area h2,
+.container .container-detail .education-area h3 {
+  margin: 0 10px 0 0;
+}
+.container .container-detail .education-area li {
+  list-style-type: none;
+  line-height: 32px;
+}
+.container .container-skill {
+  margin-top: 50px;
+  background-color: #FEDB5C;
+}
+.container .container-skill .skill-area {
+  width: 750px;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center;
+}
+.container .container-skill .skill-area .skill-banner {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.container .container-skill .skill-area .skill-banner h2,
+.container .container-skill .skill-area .skill-banner h3 {
+  margin: 0 10px 0 0;
+}
+.container .container-skill .skill-area hr {
+  border-color: #ffffff;
+}
+.container .container-skill .skill-area li {
+  list-style-type: none;
+  line-height: 32px;
+}
+.container .container-workexp {
+  width: 750px;
+  margin: auto;
+  margin-top: 50px;
+}
+.container .container-workexp .exp-banner {
+  display: flex;
+  align-items: end;
+}
+.container .container-workexp .exp-banner h2,
+.container .container-workexp .exp-banner h3 {
+  margin: 0 10px 0 0;
+  line-height: 32px;
+}
+.container .container-workexp h2 {
+  margin: 50px 10px 0 0;
+  line-height: 32px;
+}
+.container .container-workexp p {
+  margin: 0 10px 0 0;
+  line-height: 32px;
+}
+.container .container-workexp li {
+  line-height: 32px;
+}
+.container .container-portfolio {
+  margin-top: 40px;
+  background-color: #FEDB5C;
+}
+.container .container-portfolio .portfolio-area {
+  width: 750px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+.container .container-portfolio .portfolio-area .portfolio-banner {
+  display: flex;
+  align-items: end;
+}
+.container .container-portfolio .portfolio-area .portfolio-banner h2,
+.container .container-portfolio .portfolio-area .portfolio-banner h3 {
+  margin: 0 10px 0 0;
+  line-height: 32px;
+}
+.container .container-portfolio .portfolio-area hr {
+  border-color: #ffffff;
+}
+.container .container-portfolio .cards-area {
+  display: flex;
+  justify-content: space-between;
+}
+.container .container-portfolio .cards-area .card {
+  margin: 20px 0;
+  border: 2px solid #544200;
+  width: 350px;
+  position: relative;
+}
+.container .container-portfolio .cards-area .card h4 {
+  font-size: 24px;
+  margin: 10px 20px;
+}
+.container .container-portfolio .cards-area .card p {
+  font-size: 16px;
+  margin: 10px 20px 100px 20px;
+}
+.container .container-portfolio .cards-area .card .img {
+  background-color: #ffffff;
+  width: 350px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .container-portfolio .cards-area .card .img1 {
+  background-image: url(./img/result-page/20230517-dessert-shop-v1.png);
+}
+.container .container-portfolio .cards-area .card button {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  background-color: #FEDB5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  text-align: center;
+}
+footer p {
+  font-weight: bold;
+  font-family: "Papyrus";
+  font-size: 24px;
+}
+footer h3 {
+  font-family: "Papyrus";
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
